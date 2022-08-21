@@ -5,6 +5,11 @@ body {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
+header {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
 .head-container img {
   background-image: url(./header.jpeg);
   width: 100%;
@@ -20,13 +25,13 @@ body {
   left: 20px;
   right: 0;
   top: 35px;
-  color: aliceblue;
+  color:goldenrod;
 }
 /* Styles for dropdown menu */
     /* Dropdown Button */
   .dropbtn {
-    background-color: #04AA6D;
-    color: white;
+    background-color: goldenrod;
+    color:darkcyan;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -36,6 +41,7 @@ body {
 .dropdown {
   position: relative;
   display: inline-block;
+  align-self: center;
 }
 
     /* Dropdown Content (Hidden by Default) */
@@ -65,3 +71,38 @@ body {
 
     /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
+
+
+.main {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  background-color: rgb(0, 0, 7);
+  color:goldenrod;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  align-content: center;
+  flex-shrink: 0;
+  gap: 50px;
+  padding: 20px;
+  height: 100vh
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size:x-large;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.screen {
+  display: flex;
+  padding-right: 20px;
+}
