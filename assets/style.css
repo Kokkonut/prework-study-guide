@@ -5,11 +5,7 @@ body {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-header {
-  margin: 0;
-  border: 0;
-  padding: 0;
-}
+
 .head-container img {
   background-image: url(./header.jpeg);
   width: 100%;
@@ -89,7 +85,6 @@ header {
   flex-shrink: 0;
   gap: 50px;
   padding: 20px;
-  height: 100vh
 }
 
 .menu ul {
@@ -101,7 +96,14 @@ header {
   padding: 0;
   margin: 0;
 }
+.menu a {
+  text-decoration: none;
+  color: goldenrod;
+}
 
+a:hover {
+  color: darkcyan;
+}
 .screen {
   display: flex;
   padding-right: 20px;
