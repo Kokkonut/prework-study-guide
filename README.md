@@ -9,6 +9,10 @@ Notes for each section have been separated into their own pages.
 Content for the pages is loaded from a .MD file, this was done to make taking notes easier (MD syntax  is a lot cleaner to work with).
 There is a link to the required prework on each page
 
+## Planned Updates
+
+Enable note taking from website.
+
 ## Installation
 
 N/A
