@@ -157,6 +157,62 @@ Operator	Example	    Same As
     |=      x |= y      x = x | y
     **=     x **= y     x = x ** y
 
+### Numbers
+
+JavaScript Numbers are Always 64-bit Floating Point
+
+#### Integer Precision
+Integers (numbers without a period or exponent notation) are accurate up to 15 digits.
+
+The maximum number of decimals is 17.
+
+#### Floating Precision
+
+Floating point arithmetic is not always 100% accurate:
+
+    let x = 0.2 + 0.1; // 0.2 + 0.1 = 0.30000000000000004
+
+To solve the problem above, it helps to multiply and divide:
+    let x = (0.2 * 10 + 0.1 * 10) / 10; // 0.2 + 0.1 = 0.3
+
+### Adding Numbers and Strings
+If you add two numbers, the result will be a number:
+
+If you add two strings, the result will be a string concatenation:
+
+If you add a number and a string, the result will be a string concatenation:
+
+If you add a string and a number, the result will be a string concatenation:
+
+### Numeric Strings
+JavaScript strings can have numeric content:
+
+JavaScript will try to convert strings to numbers in all numeric operations:
+
+    let x = "100";
+    let y = "10";
+    let z = x - y; //This works as does / *, + DOESNT JS uses + operator to concatenate strings
+
+### NaN - Not a number
+
+### JavaScript Numbers as Objects
+
+Normally JavaScript numbers are primitive values created from literals
+
+    let x = 123;
+
+But numbers can also be defined as objects with the keyword `new`:
+    let y = new Number(123);
+
+
+### Comparison Operators
+
+    ===	    Strict equality	    Tests whether the left and right values are identical to one another	    5 === 2 + 4
+    !==	    Strict-non-equality	    Tests whether the left and right values are not identical to one another	    5 !== 2 + 3
+    <	    Less than	    Tests whether the left value is smaller than the right one.	    10 < 6
+    >	    Greater than	    Tests whether the left value is greater than the right one.	    10 > 20
+    <=	    Less than or equal to	    Tests whether the left value is smaller than or equal to the right one.	    3 <= 2
+    >=	    Greater than or equal to	    Tests whether the left value is greater than or equal to the right one.	    5 >= 4
 ## The Concept of Data Types
 
 when adding a number to a string, JS with treat the number as a string.
